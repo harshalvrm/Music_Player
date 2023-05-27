@@ -1,13 +1,14 @@
-@mixin reverse-neu {
-  box-shadow: inset -5px -5px 15px 0px #ffffff9e,
-    inset 5px 5px 15px 0px #a3b1c6a8;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+
 
 body {
   padding: 0;
   margin: 0;
-  background: #e7ff61e1;
+  background-color: #44b09e;
+  background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%);
   font-family: "Roboto", sans-serif;
+  color: #fff;
 }
 
 .container {
@@ -21,84 +22,87 @@ body {
 .iphone {
   width: 312px;
   height: 612px;
-  background: #ffffff;
-  border-radius: 2em;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #234574 50%);  
+    border-radius: 2em;
   box-sizing: border-box;
   padding: 2em;
   display: flex;
   flex-direction: column;
-  .title {
+}
+
+.title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 0.75em;
     margin-bottom: 2em;
-  }
-  .album-cover {
+}
+
+.album-cover {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    .album-overlay {
-      background: #fff;
-      width: 248px;
-      height: 248px;
-      z-index: 2;
-      border-radius: 15px;
-      position: absolute;
-      opacity: 0.35;
-    }
+}
 
-    img {
-      width: 100%;
-      border-radius: 15px;
-    }
-    .song-title {
-      text-align: center;
-      padding-bottom: 0;
-      margin-bottom: 0;
-      color: #382a2a;
-    }
-    .artist-title {
-      text-align: center;
-      padding: 1em 0;
-      margin: 0;
-      font-size: 0.85em;
-      color: #382a2a;
-    }
-  }
+.album-overlay {
+  background: #fff;
+  width: 248px;
+  height: 248px;
+  z-index: 2;
+  border-radius: 15px;
+  position: absolute;
+  opacity: 0.35;
+}
 
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+.song-title {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0; 
+  background: #579AFF;
+  background: linear-gradient(to right, #579AFF 0%, #c0c0c0 76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.artist-title {
+  text-align: center;
+  padding: 1em 0;
+  margin: 0;
+  font-size: 0.85em;
+  color: #d1d1d1;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+  
   .track {
     margin-top: 1em;
     height: 10px;
-    div {
-      width: 42%;
-      height: 100%;
-      background: $gray;
-      opacity: 0.75;
-      border-radius: 15px;
-    }
   }
 
   .buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 1em 0;
   }
 
   .lyrics {
-    color: $gray;
-    margin-top: 2em;
+    color: #323335;
+    margin-top: 1em;
     text-align: center;
     font-size: 0.75em;
     display: flex;
     flex-direction: column;
   }
-}
 
 .neu {
-  box-shadow: -5px -5px 15px 0px #ffffff9e, 5px 5px 15px 0px #a3b1c6a8;
-  background: $background-gray;
+  box-shadow: -5px -5px 15px 0px #1b2845, 5px 5px 15px 0px #a3b1c6a8;
   border-radius: 2em;
   border: 0;
 }
@@ -106,7 +110,8 @@ body {
 .btn {
   padding: 15px;
   border-radius: 40px;
-  color: $gray;
+  background-color: #6daddb;
+  background-image: linear-gradient(315deg, #6daddb 0%, #234471 45%);
   outline: none;
   cursor: pointer;
   &.lg {
@@ -123,6 +128,7 @@ body {
 }
 
 
-.red {
-  color: $red;
+.playing{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
 }
